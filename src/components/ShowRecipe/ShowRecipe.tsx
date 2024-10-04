@@ -47,7 +47,7 @@ const ShowRecipe: React.FC = () => {
 
     async function getRecipes(): Promise<Recipe[] | null> {
         try {
-            const response = await fetch(`http://canoob.de:3007/getRecipeByID?id=${encodeURIComponent(id)}`, {
+            const response = await fetch(`https://canoob.de:3007/getRecipeByID?id=${encodeURIComponent(id)}`, {
                 method: 'GET'
             });
             if (response.ok) {
