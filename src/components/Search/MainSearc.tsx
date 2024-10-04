@@ -236,12 +236,12 @@ const MainSearc: React.FC = () => {
 
                 <hr/>
 
-                <div className="Zutaten-Visualation">
+
                     <SearchRecipeView name={receptName || ""} difficulty={selectedDifficulty || ""}
                                         category={selectedCategory || ""} ingredients={selectedIngredients.join(",")}>
 
                     </SearchRecipeView>
-                </div>
+
             </main>
 
         </div>
