@@ -32,20 +32,20 @@ const App: React.FC = () => {
             setIsLoggedIn(isUserLoggedIn);
         }
     }, []);
-
+    console.log(window.location.href );
     const shouldShowNavbarFooter = !noNavbarFooterRoutes.includes(location.pathname);
     return (
         <Router>
                 {shouldShowNavbarFooter && <Navbar isLoggedIn={isLoggedIn} title="GourmetGuide" links={navLinks} />}
                 <Routes>
-                    <Route path="/GourmetGuide/" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/mainsearc/:receptName?/:Category?/:Difficulty?/:zutaten?/:Fruit?" element={<MainSearch />} />
                     <Route path="/categories" element={<Categories />} />/
                     <Route path="/log-in" element={<Login isUserLoggedIn={isLoggedIn} setIsUserLoggedIn={setIsLoggedIn} />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="*" element={<ErrorPage />} />
+                    <Route path="*" element={<Home />} />
                     <Route path="/recipe/*" element={<ShowRecipe/>} />
-                    <Route path="/home" element={<ErrorPage/>} />
+                    <Route path="/" element={<ErrorPage/>} />
                 </Routes>
                 {shouldShowNavbarFooter && <Footer />}
         </Router>
