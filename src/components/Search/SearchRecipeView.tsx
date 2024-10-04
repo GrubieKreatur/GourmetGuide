@@ -1,5 +1,5 @@
 
-import RecipeCard from '../Home/RecipeCard.tsx';
+import RecipeCard from '../Home/RecipeCard';
 import '../../App.css';
 import './SearchRecipeView.css'
 import React, {useEffect, useState} from "react";

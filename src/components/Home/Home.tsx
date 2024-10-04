@@ -1,5 +1,5 @@
-import Hero from './Hero.tsx';
-import RecipeCard from './RecipeCard.tsx';
+import Hero from './Hero';
+import RecipeCard from './RecipeCard';
 import './../../App.css';
 import React, {useEffect, useState} from "react";
 

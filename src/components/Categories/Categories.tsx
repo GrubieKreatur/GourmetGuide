@@ -1,6 +1,6 @@
 import './Categories.css';
-import CategoryCard from "./CategoryCard.tsx";
-import ErrorPage from "../errorPage.tsx";
+import CategoryCard from "./CategoryCard";
+import ErrorPage from "../errorPage";
 import React, {useState} from "react";
 
 const Categories: React.FC = () => {

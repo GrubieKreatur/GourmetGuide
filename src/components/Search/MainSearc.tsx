@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './MainSearc.css';
 import {useParams} from "react-router-dom";
-import SearchRecipeView from "./SearchRecipeView.tsx";
+import SearchRecipeView from "./SearchRecipeView";
 
 
 const MainSearc: React.FC = () => {
