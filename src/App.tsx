@@ -38,7 +38,7 @@ const App: React.FC = () => {
         <Router>
                 {shouldShowNavbarFooter && <Navbar isLoggedIn={isLoggedIn} title="GourmetGuide" links={navLinks} />}
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/GourmetGuide/" element={<Home />} />
                     <Route path="/mainsearc/:receptName?/:Category?/:Difficulty?/:zutaten?/:Fruit?" element={<MainSearch />} />
                     <Route path="/categories" element={<Categories />} />/
                     <Route path="/log-in" element={<Login isUserLoggedIn={isLoggedIn} setIsUserLoggedIn={setIsLoggedIn} />} />
