@@ -5,7 +5,6 @@ import './SearchRecipeView.css'
 import React, {useEffect, useState} from "react";
 
 interface SuchFilter{
-    children: never[],
     name:string;
     difficulty:string;
     category:string;
@@ -26,7 +25,7 @@ interface ListItem {
     id: number
 }
 
-async function getRecipes({ name, difficulty, category, ingredients}: { name: string, difficulty: string, category: string, ingredients: string }): Promise<Recipe[] | null> {
+async function getRecipes({name, difficulty, category, ingredients}: { name: string, difficulty: string, category: string, ingredients: string }): Promise<Recipe[] | null> {
     console.log(ingredients);
     const promt = `http://canoob.de:3007/getFilteredRecipes` +
         `?name=`+ (name==``? `&`: `${encodeURIComponent(name) }&`) +
@@ -49,7 +48,7 @@ async function getRecipes({ name, difficulty, category, ingredients}: { name: st
 }
 
 
-const SearchRecipeView: React.FC<SuchFilter> = ({children, name, difficulty, category, ingredients}) => {
+const SearchRecipeView: React.FC<SuchFilter> = ({name, difficulty, category, ingredients}) => {
     const [sampleRecipes, setSampleRecipes] = useState<ListItem[]>([]);
 
     useEffect(() => {
