@@ -1,8 +1,8 @@
 {
-  "name": "sample-react-typescript-githubpages",
+  "name": "GourmetGuide",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://kinneko-de.github.io/sample-react-typescript-githubpages/",
+  "homepage": "https://GrubieKreatur/GourmetGuide/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -21,6 +21,7 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "dev" : "npm run",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
