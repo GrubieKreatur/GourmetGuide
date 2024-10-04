@@ -45,7 +45,6 @@ const App: React.FC = () => {
                     <Route path="/register" element={<Register />} />
                     <Route path="*" element={<Home />} />
                     <Route path="/recipe/*" element={<ShowRecipe/>} />
-                    <Route path="/" element={<ErrorPage/>} />
                 </Routes>
                 {shouldShowNavbarFooter && <Footer />}
         </Router>
