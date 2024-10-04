@@ -1,8 +1,8 @@
 {
-  "name": "GourmetGuide",
+  "name": "gourmetguide",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://GrubieKreatur/GourmetGuide/",
+  "homepage": "https://grubiekreatur.github.io/GourmetGuide/",
   "type": "module",
   "dependencies": {
     "bootstrap": "^5.3.3",
