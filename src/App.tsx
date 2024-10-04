@@ -36,7 +36,6 @@ const App: React.FC = () => {
     const shouldShowNavbarFooter = !noNavbarFooterRoutes.includes(location.pathname);
     return (
         <Router>
-            <>
                 {shouldShowNavbarFooter && <Navbar isLoggedIn={isLoggedIn} title="GourmetGuide" links={navLinks} />}
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -49,7 +48,6 @@ const App: React.FC = () => {
                     <Route path="/home" element={<ErrorPage/>} />
                 </Routes>
                 {shouldShowNavbarFooter && <Footer />}
-            </>
         </Router>
     );
 };
